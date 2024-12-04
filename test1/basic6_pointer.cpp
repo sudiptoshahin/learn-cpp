@@ -29,18 +29,19 @@ int main() {
   }
   cout << endl;
 
-  for (int i=0; i<N; i++) {
-    int key = arr[i];
-    arr[N-i-1] = key;
-    arr[i] = arr[N-i-1];
+
+  int tempArr[N] = {};
+  for(int i=0; i<4; i++) {
+    tempArr[i] = arr[N-i-1];
   }
 
   cout << "Updated entered numbers: ";
   for (int i=0; i<N; i++) {
-    cout << arr[i];
+    cout << tempArr[i];
   }
   cout << endl;
 
+  cout << arr[N] << endl;
 
   // [1, 3, 5, 7]
   /**

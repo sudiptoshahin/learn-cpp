@@ -15,4 +15,8 @@ int main() {
 
     cout << "Reserved numbers: " << revNumbers << "\n";
 
+    for (int i=0; i<5; i++) {
+        cout << "idx: " << i << " Hello world" << endl;
+    }
+
 }

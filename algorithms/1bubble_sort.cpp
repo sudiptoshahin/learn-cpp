@@ -24,6 +24,20 @@ void bubbleSort(int arr[], int size) {
     }
 }
 
+// void bubbleSort(int arr[], int size) {
+//     for (int i=0; i<size-1; i++) {
+//         cout << "Now i=" << i << endl;
+//         for (int j=0; j<size-i-1; j++) {
+//             cout << "Now N-i-1=" << size-i-1 << endl;
+//             if (arr[i] > arr[i+1]) {
+//                 int temp = arr[i];
+//                 arr[i] = arr[i+1];
+//                 arr[i+1] = temp;
+//             }
+//         }
+//     }
+// }
+
 void printArr(int arr[], int size) {
     for (int i=0; i<size; ++i) {
         cout << arr[i] << " ";
@@ -32,7 +46,8 @@ void printArr(int arr[], int size) {
 }
 
 int main() {
-    int arr[] = {64, 34, 25, 12, 22, 11, 90, 5};
+    // int arr[] = {64, 34, 25, 12, 22, 11, 90, 5};
+    int arr[] = {7, 12, 9, 11, 3};
     int n = sizeof(arr)/sizeof(arr[0]);
 
     cout << "Length: " << n << endl;
